@@ -7,7 +7,7 @@ public class Estudiante {
     private double promedio;
 
     //constructor
-    public Estudiante(String m, String n, double estructuras, double evaluación, double ingles) {
+    public Estudiante(String m, String n) {
         // El objetivo es construir e inicializar el objeto
         this.matricula = m;
         this.nombre = n;
@@ -54,8 +54,8 @@ public class Estudiante {
         return promedio;
     }
 
-    public void setPromedio(double promedio) {
-        this.promedio = promedio;
+    public void setPromedio() {
+        this.promedio = (this.estructuras + this.evaluación + this.ingles)/3;;
     }
 //------------------------------------------------------------------
     @Override
